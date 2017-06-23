@@ -41,6 +41,7 @@ import Ajv from 'ajv';
 import AutoComplete from 'material-ui/AutoComplete';
 import DropDownMenu from 'material-ui/DropDownMenu';
 import MenuItem from 'material-ui/MenuItem';
+import AppDispatcher from 'boundless-sdk/dispatchers/AppDispatcher';
 
 const messages = defineMessages({
   optionslabel: {
@@ -895,6 +896,15 @@ class FeatureTableTab extends React.Component {
 	  
   }
 
+  clearQueryEvent() {
+  	AppDispatcher.dispatch({
+      action: {
+        type: 'add-activation', //clear-query
+        activation: act_data
+     }
+    });
+  }
+
   render() {
     const {formatMessage} = this.props.intl;
     var schema, id;
@@ -1311,6 +1321,7 @@ class FeatureTableTab extends React.Component {
               	<RaisedButton style={{minWidth: '40px'}} disabled={!this._layer} icon={<ActionSearch />} tooltip={formatMessage(messages.zoombuttontitle)} onTouchTap={this._zoomSelected.bind(this)} disableTouchRipple={true}/>
               	<RaisedButton style={{minWidth: '40px'}} disabled={!this._layer} icon={<ClearIcon />} tooltip={formatMessage(messages.clearbuttontitle)} onTouchTap={this._clearSelected.bind(this)} disableTouchRipple={true}/>
               	<RaisedButton style={{minWidth: '40px'}} secondary={this.state.tablebuttoncolor} icon={<i className='fa fa-expand'></i>} tooltip={'Toggle fullscreen table'} disabled={!this._layer} onTouchTap={this.tablefullscreentoggle.bind(this)} disableTouchRipple={true}/>
+              	<RaisedButton style={{minWidth: '40px'}} icon={<i className='fa fa-times'></i>} tooltip={'Test clear filter'} disabled={!this._layer} onTouchTap={this.clearQueryEvent.bind(this)} disableTouchRipple={true}/>
               </ToolbarGroup>
 							<ToolbarGroup lastChild={true}>
               	<ToolbarSeparator style={{marginLeft: '20px', marginRight: '20px'}} />
