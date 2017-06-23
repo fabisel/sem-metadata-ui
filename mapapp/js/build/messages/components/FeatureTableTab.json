@@ -1,0 +1,102 @@
+[
+  {
+    "id": "featuretable.optionslabel",
+    "description": "Label for the collapsble options",
+    "defaultMessage": "Options"
+  },
+  {
+    "id": "featuretable.nodatamsg",
+    "description": "Message to display if there are no layers with data",
+    "defaultMessage": "You haven’t loaded any layers with feature data yet, so there is no data to display in the table. When you add a layer with feature data, that data will show here."
+  },
+  {
+    "id": "featuretable.errormsg",
+    "description": "Error message to show when filtering fails",
+    "defaultMessage": "There was an error filtering your features. ({msg})"
+  },
+  {
+    "id": "featuretable.loaderrormsg",
+    "description": "Error message to show when loading fails",
+    "defaultMessage": "There was an error loading your features. ({msg})"
+  },
+  {
+    "id": "featuretable.layerlabel",
+    "description": "Label for the layer select",
+    "defaultMessage": "Layer"
+  },
+  {
+    "id": "featuretable.zoombuttontitle",
+    "description": "Title for the zoom button",
+    "defaultMessage": "Zoom to selected"
+  },
+  {
+    "id": "featuretable.zoombuttontext",
+    "description": "Text for the zoom button",
+    "defaultMessage": "Zoom"
+  },
+  {
+    "id": "featuretable.clearbuttontitle",
+    "description": "Title for the clear button",
+    "defaultMessage": "Clear selected"
+  },
+  {
+    "id": "featuretable.clearbuttontext",
+    "description": "Text for the clear button",
+    "defaultMessage": "Clear"
+  },
+  {
+    "id": "featuretable.onlyselected",
+    "description": "Label for the show selected features only checkbox",
+    "defaultMessage": "Selected only"
+  },
+  {
+    "id": "featuretable.filterplaceholder",
+    "description": "Placeholder for filter expression input field",
+    "defaultMessage": "Type filter expression"
+  },
+  {
+    "id": "featuretable.filterhelptext",
+    "description": "filter help text",
+    "defaultMessage": "ATTRIBUTE == \"Value\""
+  },
+  {
+    "id": "featuretable.filterlabel",
+    "description": "Label for the filter expression input field",
+    "defaultMessage": "Filter"
+  },
+  {
+    "id": "featuretable.filterlabelselected",
+    "description": "Label for the filter expression input field",
+    "defaultMessage": "Filter SELECTED LAYER"
+  },
+  {
+    "id": "featuretable.filterbuttontext",
+    "description": "Text for the filter button",
+    "defaultMessage": "Filter results based on your criteria"
+  },
+  {
+    "id": "featuretable.filterlabelall",
+    "description": "Label for the filter expression input field",
+    "defaultMessage": "Filter ALL LAYERS"
+  },
+  {
+    "id": "featuretable.filterlabelallbutton",
+    "description": "Label for the filter expression input field",
+    "defaultMessage": "Export to layer"
+  },
+  {
+    "id": "featuretable.validatetitle",
+    "description": "Title for the validate button",
+    "defaultMessage": "Validate your metadata structure"
+  },
+  {
+    "id": "featuretable.exporttooltip",
+    "description": "Export query to new layer",
+    "defaultMessage": "Export query to new layer"
+  },
+  {
+    "id": "featuretable.previewtoggletext",
+    "description": "Text for the move button",
+    "defaultMessage": "Preview"
+  }
+]

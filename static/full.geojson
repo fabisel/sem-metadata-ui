@@ -1,0 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name_of_aoi": "Eastern Spain",
+        "metadata_type": "aoi",
+        "planned_map_type": "delineation",
+        "planned_satellite_data": "reference to image"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -2.724609375,
+              36.80928470205937
+            ],
+            [
+              3.076171875,
+              36.80928470205937
+            ],
+            [
+              3.076171875,
+              40.713955826286046
+            ],
+            [
+              -2.724609375,
+              40.713955826286046
+            ],
+            [
+              -2.724609375,
+              36.80928470205937
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_of_aoi": "Central Italy",
+        "metadata_type": "aoi",
+        "planned_map_type": "reference",
+        "planned_satellite_data": "reference to image"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              9.4921875,
+              40.44694705960048
+            ],
+            [
+              16.69921875,
+              40.38002840251183
+            ],
+            [
+              16.787109375,
+              43.96119063892024
+            ],
+            [
+              9.4921875,
+              44.02442151965934
+            ],
+            [
+              9.4921875,
+              40.44694705960048
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

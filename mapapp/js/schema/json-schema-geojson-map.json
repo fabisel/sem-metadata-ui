@@ -1,0 +1,83 @@
+{
+  "title": "Metadata Map Product",
+  "description": "This is a schema for validating map products (entire geojson).",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "properties": {
+            "type": "object",
+            "properties": {
+              "metadata_type": {
+                "type": "string", "default": "n/a"
+              },
+              "name": {
+                "type": "string", "default": "n/a"
+              },
+              "map_type": {
+                "type": "string", "default": "n/a"
+              },
+              "production_site": {
+                "type": "string", "default": "n/a"
+              },
+              "status": {
+                "type": "string", "default": "n/a"
+              },
+              "availability": {
+                "type": "string", "default": "n/a"
+              },
+              "product_link": {
+                "type": "string", "default": "n/a"
+              }
+            },
+            "required": [
+              "metadata_type",
+              "name",
+              "map_type",
+              "production_site",
+              "status",
+              "availability",
+              "product_link"
+            ],
+            "additionalProperties": true
+          },
+          "geometry": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "coordinates": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "minItems": 5,
+                  "items": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "items": {
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}

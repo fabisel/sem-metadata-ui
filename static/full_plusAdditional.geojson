@@ -1,0 +1,99 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name_of_aoi": "Denmark",
+        "metadata_type": "aoi",
+        "planned_map_type": "delineation",
+        "planned_satellite_data": "reference to image",
+        "Name":null,
+        "description":null,
+        "timestamp":null,
+        "begin":null,
+        "end":null,
+        "altitudeMode":"clampToGround",
+        "tessellate":-1,
+        "extrude":-1,
+        "visibility":-1,
+        "drawOrder":null,
+        "icon":null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              5.44921875,
+              54.521081495443596
+            ],
+            [
+              14.1064453125,
+              54.521081495443596
+            ],
+            [
+              14.1064453125,
+              57.51582286553883
+            ],
+            [
+              5.44921875,
+              57.51582286553883
+            ],
+            [
+              5.44921875,
+              54.521081495443596
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name_of_aoi": "Ireland",
+        "metadata_type": "aoi",
+        "planned_map_type": "reference",
+        "planned_satellite_data": "reference to image",
+        "Name":null,
+        "description":null,
+        "timestamp":null,
+        "begin":null,
+        "end":null,
+        "altitudeMode":"clampToGround",
+        "tessellate":-1,
+        "extrude":-1,
+        "visibility":-1,
+        "drawOrder":null,
+        "icon":null
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -11.4697265625,
+              51.508742458803326
+            ],
+            [
+              -5.537109374999999,
+              51.508742458803326
+            ],
+            [
+              -5.537109374999999,
+              54.03358633521085
+            ],
+            [
+              -11.4697265625,
+              54.03358633521085
+            ],
+            [
+              -11.4697265625,
+              51.508742458803326
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

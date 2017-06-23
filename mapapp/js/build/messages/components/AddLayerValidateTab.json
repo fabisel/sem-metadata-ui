@@ -1,0 +1,87 @@
+[
+  {
+    "id": "addlayer.errormsg",
+    "description": "Error message to show when reading features fails",
+    "defaultMessage": "There was an error reading your file. ({msg})"
+  },
+  {
+    "id": "addlayer.waitmsg",
+    "description": "Wait message to show when reading features",
+    "defaultMessage": "Please wait while your dataset is processed ..."
+  },
+  {
+    "id": "addlayer.menutext",
+    "description": "Text of the menu button",
+    "defaultMessage": "Upload"
+  },
+  {
+    "id": "addlayer.menutitle",
+    "description": "Title of the menu button",
+    "defaultMessage": "Upload local vector file to application"
+  },
+  {
+    "id": "addlayer.modaltitle",
+    "description": "Title of the modal dialog for add layer",
+    "defaultMessage": "Upload layer"
+  },
+  {
+    "id": "addlayer.dropzonelabel",
+    "description": "Label for the drag and drop zone for files",
+    "defaultMessage": "File"
+  },
+  {
+    "id": "addlayer.dropzonehelp",
+    "description": "Help text for the drag and drop zone for files",
+    "defaultMessage": "Drop a KML, GPX, GeoRSS or GeoJSON file here, or click to select it."
+  },
+  {
+    "id": "addlayer.strokecolorlabel",
+    "description": "Label text for the stroke color colorpicker",
+    "defaultMessage": "Stroke color"
+  },
+  {
+    "id": "addlayer.fillcolorlabel",
+    "description": "Label text for the fill color colorpicker",
+    "defaultMessage": "Fill color"
+  },
+  {
+    "id": "addlayervalidatetab.closebuttontext",
+    "description": "Title of the close button",
+    "defaultMessage": "Clear"
+  },
+  {
+    "id": "addlayervalidatetab.closebuttontitle",
+    "description": "Tooltip for close button",
+    "defaultMessage": "Clear Current File"
+  },
+  {
+    "id": "addlayer.applybuttontext",
+    "description": "Text of the apply button",
+    "defaultMessage": "Apply"
+  },
+  {
+    "id": "addlayervalidatetab.applybuttontitle",
+    "description": "Title of the apply button",
+    "defaultMessage": "Add vector layer to map"
+  },
+  {
+    "id": "addlayer.validatetitle",
+    "description": "Title for the validate button",
+    "defaultMessage": "Validate your metadata structure"
+  },
+  {
+    "id": "addlayer.validatetext",
+    "description": "Text for the validate button",
+    "defaultMessage": "Validate"
+  },
+  {
+    "id": "addlayer.urlinputtext",
+    "description": "Text for the validate button",
+    "defaultMessage": "Add file from GeoRSS feed"
+  },
+  {
+    "id": "addlayer.urlinputhint",
+    "description": "Text for the validate button",
+    "defaultMessage": "Enter valid url here"
+  }
+]

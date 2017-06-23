@@ -1,0 +1,111 @@
+{
+  "name": "Metadata-Explorer-Validator",
+  "version": "0.0.1",
+  "description": "Metadata-Explorer-Validator",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabisel/sem-metadata-ui.git"
+  },
+  "scripts": {
+    "createdir": "node createbuild.js",
+    "start:debug": "node debug-server.js",
+    "start": "node_modules/.bin/npm-run-all createdir start:debug",
+    "build:js": "node_modules/.bin/browserify -g [envify --NODE_ENV production] -p [minifyify --no-map --exclude node_modules/openlayers/dist/ol.js] app.jsx -o build/app.js",
+    "build": "node_modules/.bin/npm-run-all createdir build:js",
+    "createzip": "node createpackage.js",
+    "package": "node_modules/.bin/npm-run-all build createzip",
+    "startwebpack": "webpack --config webpack.config.js",
+    "dev": "webpack-dev-server"
+  },
+  "author": "fabisel",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "ajv": "5.0.3-beta.0",
+    "boundless-sdk": "0.10.25",
+    "boundless-sdk-tools": "^0.9.3",
+    "fetch": "^1.1.0",
+    "fixed-data-table": "^0.6.3",
+    "material-ui": "^0.16.4",
+    "openlayers": "4.0.1",
+    "query-string": "^4.2.3",
+    "react": "15.3.2",
+    "react-addons-css-transition-group": "^15.3.2",
+    "react-dnd": "^2.1.4",
+    "react-dnd-html5-backend": "^2.1.2",
+    "react-dom": "15.3.2",
+    "react-intl": "^2.1.5",
+    "react-tap-event-plugin": "^1.0.0",
+    "superagent": "3.1.0",
+    "superagent-django-csrf": "^0.1.3",
+    "whatwg-fetch": "^2.0.1"
+  },
+  "devDependencies": {
+    "archiver": "^1.3.0",
+    "babel-core": "6.24.0",
+    "babel-eslint": "^4.1.6",
+    "babel-loader": "6.4.0",
+    "babel-plugin-react-intl": "2.2.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-object-rest-spread": "^6.19.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-1": "^6.16.0",
+    "babel-runtime": "^6.11.6",
+    "babelify": "^7.3.0",
+    "browserify": "13.1.0",
+    "chai": "^1.10.0",
+    "chai-xml": "^0.3.1",
+    "clean-css": "^3.4.6",
+    "coveralls": "^2.11.14",
+    "css-loader": "^0.27.3",
+    "cssify": "^0.8.0",
+    "dr-frankenstyle-win": "0.2.13",
+    "envify": "3.4.0",
+    "es6-promise": "^3.0.2",
+    "eslint": "1.9.0",
+    "eslint-plugin-react": "3.9.0",
+    "exports-loader": "^0.6.4",
+    "gitbook-cli": "2.1.2",
+    "imports-loader": "^0.7.1",
+    "intl": "^1.0.0",
+    "licensify": "^2.2.0",
+    "minifyify": "^7.1.0",
+    "mocha": "^2.1.0",
+    "mocha-lcov-reporter": "^1.2.0",
+    "mochify": "^2.10.0",
+    "mochify-istanbul": "^2.4.1",
+    "npm-run-all": "^1.2.11",
+    "phantomjs-polyfill-find": "github:ptim/phantomjs-polyfill-find",
+    "phantomjs-polyfill-object-assign": "0.0.2",
+    "phantomjs-prebuilt": "^2.1.7",
+    "raf": "^3.2.0",
+    "react": "15.3.2",
+    "react-addons-test-utils": "15.3.2",
+    "react-docgen": "^2.2.0",
+    "react-dom": "15.3.2",
+    "react-tap-event-plugin": "^1.0.0",
+    "replacestream": "^4.0.2",
+    "rimraf": "^2.5.3",
+    "sinon": "^1.12.2",
+    "style-loader": "^0.14.1",
+    "through": "^2.3.8",
+    "watchify": "^3.2.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "presets": [
+            "es2015",
+            "react",
+            "stage-2"
+          ]
+        }
+      ],
+      "cssify"
+    ]
+  }
+}

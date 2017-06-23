@@ -1,0 +1,71 @@
+{
+  "title": "Metadata AOI",
+  "description": "This is a schema for validating the specification.",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "properties": {
+            "type": "object",
+            "properties": {
+              "metadata_type": {
+                "type": "string"
+              },
+              "name_of_aoi": {
+                "type": "string"
+              },
+              "planned_map_type": {
+                "type": "string"
+              },
+              "planned_satellite_data": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "metadata_type",
+              "name_of_aoi",
+              "planned_map_type",
+              "planned_satellite_data"
+            ],
+            "additionalProperties": true
+          },
+          "geometry": {
+            "type": "object",
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "coordinates": {
+                "type": "array",
+                "items": {
+                  "type": "array",
+                  "minItems": 5,
+                  "items": {
+                    "type": "array",
+                    "minItems": 2,
+                    "maxItems": 2,
+                    "items": {
+                      "type": "number"
+                    }
+                  }
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
