@@ -1,5 +1,6 @@
 *.pyc
 db.sqlite3
+npm-debug.log
 django.sh
 start_react.sh
 django-react.egg-info
