@@ -388,10 +388,7 @@ class FeatureTableTab extends React.Component {
     }
   }
   _clearSelected() {
-    if (this.state.selected.length > 0) {
-      var lyr = this._layer;
-      SelectActions.clear(lyr, this._selectedOnly);
-    }
+    this.setState({searchText2: '', searchText: '', value: 1}, this._filterByText);
   }
   _zoomSelected() {
     var selected = this.state.selected;
